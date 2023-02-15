@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qr Code Generator</title>
+  <link rel="icon" type="image/png" href="images/favicon1.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <nav id="navbar">
+      <i id="closeNav" class="fa-solid fa-rectangle-xmark"></i>
+      <header>
+        <h1>Qr Code Generator</h1>
+        <p>to create Dynamic QR Codes</p>
+
+      </header>
+      <hr>
+      <section class="wrapper-qr">
+        <h3>QR Code</h3>
+        <div class="box-generate">
+          <a href="#createQR-Code">
+            <i class="fa-sharp fa-solid fa-qrcode"></i>
+            <div class="deskripsi-generate">
+              <h4>Generate</h4>
+              <p>Static Qr Code</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <hr>
+      <section class="wrapper-about">
+        <h4>About</h4>
+        <ul>
+          <li>
+            <a href="#whatQRCode">What's QR Code ?</a>
+          </li>
+          <li>
+            <a class="getmore" href="#getMore">Get More</a>
+          </li>
+          <li>
+            <a class="api" href="https://goqr.me/api/" target="_blank">API</a>
+          </li>
+          <li>
+            <a target="_blank" class="term" href="https://goqr.me/de/rechtliches/datenschutz-goqrme.html">Term of
+              use</a>
+          </li>
+        </ul>
+      </section>
+      <footer>
+        <p>Copyright © Angger nur - 2023</p>
+      </footer>
+
+    </nav>
+    <main>
+
+      <header>
+
+        <h3 id="title">Create QR Code Generator</h3>
+        <i id="hamburger" class="fa-solid fa-bars"></i>
+      </header>
+      <div id="createQR-Code" class="wrapper-content">
+        <section id="list">
+          <div class="box-list">
+            <ul>
+              <li>
+                <h4 class="type">Basic QR Codes</h4>
+                <a href="#">
+                  <i class="fa-solid fa-pen"></i>
+                  <h4 id="list-text">Text</h4>
+                </a>
+              </li>
+              <li class="typeIcon">
+                <a href="#content-Email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <h4 id="list-email">Email</h4>
+                </a>
+              </li>
+              <li>
+                <a href="#content-Phone">
+                  <i class="fa-solid fa-phone"></i>
+                  <h4 id="list-phone">Phone</h4>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-link"></i>
+                  <h4 id="list-url">Url</h4>
+
+                </a>
+              </li>
+              <li>
+                <a href="#content-Image">
+                  <i class="fa-solid fa-image"></i>
+                  <h4 id="list-Image">Image</h4>
+                </a>
+              </li>
+              <li>
+                <a href="content-Mp3">
+                  <i class=" fa-regular fa-file-audio"></i>
+                  <h4 id="list-Mp3">Mp3</h4>
+                </a>
+              </li>
+
+
+
+              <li>
+                <h4 class="type">Social Media QR Codes</h4>
+                <a href="">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <h4 id="list-Fb">Facebook</h4>
+                </a>
+              </li>
+
+              <li class="typeIcon">
+                <a href="content-Ig">
+                  <i class="fa-brands fa-instagram"></i>
+                  <h4 id="list-Ig">Instagram</h4>
+                </a>
+              </li>
+
+              <li>
+                <a href="content-Linkedin">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <h4 id="list-Linkedin">Linkedin</h4>
+                </a>
+              </li>
+
+              <li>
+                <a href="content-Line">
+                  <i class="fa-brands fa-line"></i>
+                  <h4 id="list-Line">Line</h4>
+                </a>
+              </li>
+
+              <li>
+                <a href="content-Wa">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <h4 id="list-Wa">Whatsapp</h4>
+                </a>
+              </li>
+
+              <li>
+                <a href="content-Pinterest">
+                  <i class="fa-brands fa-pinterest"></i>
+                  <h4 id="list-Pinterest">Pinterest</h4>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="conten-list">
+
+            <h3 id="target-title"></h3>
+
+            <div id="target-content">
+              <div id="content-Text">
+
+              </div>
+              <div id="content-Phone">
+
+              </div>
+              <div id="content-Email">
+
+              </div>
+              <div id="content-Url">
+
+              </div>
+              <div class="deskripsi-url">
+              </div>
+              <div id="content-Image">
+
+              </div>
+
+              <div id="content-Mp3">
+
+              </div>
+
+              <div id="content-Fb">
+
+              </div>
+
+              <div id="content-Ig">
+
+              </div>
+
+              <div id="content-Linkedin">
+
+              </div>
+              <div id="content-Line">
+
+              </div>
+              <div id="content-Wa">
+
+              </div>
+              <div id="content-Pinterest">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper-option">
+            <div class="box-option">
+              <div class="header-option">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Set Colors</h3>
+                <i id="iconDisplay" class="fa-solid fa-chevron-up"></i>
+              </div>
+
+              <div class="content-option">
+                <label for="foreground" class="title-foreground">Foreground</label>
+                <div class="box-foreground">
+                  <input type="color" name="foreground" id="foreground"> <span id="hexsaForeground">#333333</span>
+
+                </div>
+                <label for="background">Background</label>
+                <div class="box-background">
+                  <input type="color" name="background" value="#FFFFFF" id="background"> <span
+                    id="hexsaBackground">#312121</span>
+                </div>
+                <p class="deskripsi-color">Make sure there is enough contrast to the darker foreground.</p>
+
+              </div>
+            </div>
+
+            <div class="box-option">
+              <div class="header-option">
+                <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                <h3>Set Margin</h3>
+                <i onclick="displayMargin()" id="iconDisplayMargin" class="fa-solid fa-chevron-up"></i>
+              </div>
+              <div class="option-margin">
+                <label for="number">Set number (1 - 50)</label>
+                <input type="number" id="number" name="number" min="0" max="50" value="1">
+              </div>
+            </div>
+
+            <div class="box-option">
+              <div class="header-option">
+                <i class="fa-solid fa-file-image"></i>
+                <h3>Set Size</h3>
+                <i onclick="displayFormat()" id="iconDisplayFormat" class="fa-solid fa-chevron-up"></i>
+              </div>
+              <div class="option-format">
+                <label for="">Set Size image</label>
+                <input type="range" id="size" min="200" value="200" max="2000">
+                <div class="deskripsi-size">
+                  <span>Small</span>
+                  <h4 id="sizeValue">200 x 200 px</h4>
+                  <span>Large</span>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </section>
+        <section id="code">
+          <div class="wrapper-qrCode">
+            <div class="img-box">
+              <img src="" alt="" id="qrImage">
+            </div>
+
+            <input type="range" id="resolusi" min="0" value="L" max="30">
+            <div class="deskripsi-resolusi">
+              <span>Low Quality</span>
+              <h4 id="resolusiValue">L</h4>
+              <span>High Quality</span>
+            </div>
+
+            <input class="btn-Generate" type="button" id="btn-Generate" value="Generate QR Code">
+            <button id="btn-Download">Download PNG</button>
+          </div>
+        </section>
+      </div>
+
+
+      <section id="getMore" class="getMore">
+        <h2>Available Features</h2>
+        <p class="deskripsi-getMore">
+          The professional <b>QR Code Management </b>platform to create, track and edit all your QR codes in one place.
+        </p>
+        <div class="wrapper-info">
+
+
+          <div class="box-info">
+            <div class="box-icon">
+              <i class="fa-solid fa-pencil"></i>
+            </div>
+            <h4>Dynamic QR Codes</h4>
+            <p>Edit and change your QR codes anytime.</p>
+          </div>
+
+          <div class="box-info">
+            <div class="box-icon">
+              <i class="fa-sharp fa-solid fa-palette"></i>
+            </div>
+            <h4>Choose Color & Shape</h4>
+            <p>Edit the color as you like with a choice of background color and color.</p>
+          </div>
+
+          <div class="box-info">
+            <div class="box-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h4>Creation and Editing</h4>
+            <p>Create and edit many QR codes in no time.</p>
+          </div>
+          <div class="box-info">
+            <div class="box-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+            <h4>Download Image</h4>
+            <p>download the qr code result video that is ready to be published.</p>
+          </div>
+
+        </div>
+
+
+      </section>
+      <section id="whatQRCode">
+        <div class="image-code">
+          <img src="images.jpg" alt="">
+        </div>
+        <div class="box-deskripsi-qr">
+          <h4>What is QR Code ?</h4>
+          <p>QR Code is a two-dimensional version of the barcode, typically made up of black and white pixel patterns.
+            Denso
+            Wave, a Japanese subsidiary of the Toyota supplier Denso, developed them for marking components in order to
+            accelerate logistics processes for their automobile production. Now, it has found its way into mobile
+            marketing
+            with the widespread adoption of smartphones. "QR" stands for "Quick Response", which refers to the instant
+            access to the information hidden in the Code.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrapper-useQR">
+          <h2>QR Code Where to use?</h2>
+          <div class="box-use">
+            <div class="use-deskripsi">
+              <span>Marketing</span>
+              <h3>QR Code Tips</h3>
+              <p class="deksripsiMarketing">
+                The success of many advertising and marketing campaigns depens on their visuals. When marketing a QR
+                code,its appearance is also an important point that affects the number of scans and transitions to the
+                resource you specified</p>
+            </div>
+            <div class="use-image">
+              <img src="images/information-materials_2.png" alt="">
+            </div>
+
+          </div>
+          <div class="box-use">
+            <div class="use-image">
+              <img src="images/information-materials_3.png" alt="">
+            </div>
+            <div class="use-deskripsi-right">
+              <span>Personal Use </span>
+              <h3>Business card</h3>
+              <p class="deskripsi-right">Visting cards have long been an important part of interaction and receiving
+                contacts.Visiting cards are considired one the fasted method to interchange data.</p>
+            </div>
+
+
+          </div>
+          <div class="box-use">
+            <div class="use-deskripsi">
+              <span>Horeca</span>
+              <h3>QR code for restaurant and cafe</h3>
+              <p class="deksripsiMarketing">Up to this point,the digital menu was not used as often.Now this original
+                type
+                of menu allows you to attract more customers,save time and promote your own business and make your
+                restaurant recognizable.</p>
+            </div>
+            <div class="use-image">
+              <img src="images/information-materials_4.png" alt="">
+            </div>
+
+          </div>
+          <div class="box-use">
+            <div class="use-image">
+              <img src="images/qrCodeYoutube.png" alt="">
+            </div>
+            <div class="use-deskripsi-right">
+
+              <span>Personal Use</span>
+              <h3>
+                QR-code for YouTube</h3>
+              <p class="deskripsi-right">QR-code for YouTube video is perfect in such cases as advertising cards,a
+                portfolio or a resume brochure,It is convenient for users because they dont't need to look for different
+                links to find your video.</p>
+            </div>
+
+
+          </div>
+        </div>
+
+      </section>
+
+      <section>
+        <div class="wrapper-steps-create-qr">
+          <h2>Create QR Code in 3 steps</h2>
+          <div class="box-steps">
+            <div class="step">
+              <img src="images/il1.png" alt="">
+              <p class="deskripsi-steps">steps 1</p>
+              <h3>Choose the type</h3>
+            </div>
+
+            <div class="step">
+
+              <img src="images/il2.png" alt="">
+              <p class="deskripsi-steps">steps 2</p>
+              <h3>Generate QR Code</h3>
+
+            </div>
+            <div class="step">
+
+              <img src="images/il3.png" alt="">
+              <p class="deskripsi-steps">steps 3</p>
+              <h3>Customize & download</h3>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="modal-box">
+      <div class="wrapper-error">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <i class="fa-solid fa-xmark"></i>
+        <h4>"It seems that you have left one of the required fields empty. In order to proceed, please fill in all the
+          necessary inputs to ensure accurate and complete information." </h4>
+      </div>
+    </section>
+
+
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
